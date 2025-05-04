@@ -164,4 +164,16 @@ Enables detection of potential breaches or misuse, providing a way to respond qu
 Apply software patches and updates to frameworks, libraries, and server environments promptly.  
 **Importance:**  
 Reduces vulnerabilities by ensuring all components are up-to-date with the latest security fixes.
+
 ## CI/CD Pipeline Overview
+
+### What are CI/CD Pipelines?
+CI/CD pipelines (Continuous Integration and Continuous Deployment/Delivery) are automated processes that build, test, and deploy code changes whenever new code is committed. They help ensure that software updates are integrated smoothly, tested for errors, and deployed to production quickly and reliably.
+
+### Why Are CI/CD Pipelines Important?
+CI/CD pipelines reduce manual work and errors in the development process, make it easier to catch bugs early, and speed up delivery of new features and fixes. For an Airbnb clone project, this means faster, safer updates, more reliable deployments, and a better experience for users.
+
+### Tools Commonly Used
+- **GitHub Actions:** Automates workflows for building, testing, and deploying code directly from GitHub repositories.
+- **Docker:** Packages the application and its dependencies into containers for consistent deployment across environments.
+- **Jenkins:** An open-source automation server for building CI/CD pipelines.
