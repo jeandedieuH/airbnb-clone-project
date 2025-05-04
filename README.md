@@ -105,5 +105,23 @@ This project is an application inspired by Airbnb, designed to replicate its cor
 - A payment is linked to one booking.
 - A payment is made by the guest (user) and received by the host (user, through the booking/property relationship).
 ## Feature Breakdown
+### 1. User Management
+Enables users to register, log in, manage their profiles, and set their roles as guests or hosts. This feature ensures secure access and personalized experiences for users, forming the foundation for all other interactions on the platform.
+
+### 2. Property Management
+Allows hosts to list, edit, and remove properties, upload images, and provide detailed descriptions and pricing. This feature gives property owners control over their listings and ensures guests have access to accurate and up-to-date information.
+### 3. Booking System
+Lets guests search for available properties, select dates, and make reservations with real-time availability checks. The booking system manages reservation conflicts and streamlines the process of securing a stay, providing a seamless user experience.
+### 4. Review and Rating System
+Enables guests to leave reviews and ratings for properties and hosts after their stay. This feature builds trust within the community by offering transparency and feedback for both guests and hosts.
+### 5. Payment Integration
+Handles secure processing of payments for bookings, including payment confirmation and tracking transaction status. Payment integration ensures confidence in financial transactions between guests and hosts, making the platform commercially viable.
+### 6. Search and Filtering
+Allows users to search for properties by location, date, price range, and amenities. This feature helps users find listings that match their preferences quickly and efficiently.
+### 7. Host Dashboard
+Provides hosts with an interface to manage their properties, view upcoming bookings, track earnings, and respond to guest inquiries. The dashboard simplifies property management and helps hosts stay organized.
+### 8. Responsive Design
+Ensures the platform is accessible and user-friendly on desktops, tablets, and mobile devices. Responsive design expands the usability of the application, allowing users to interact with it from any device.
+
 ## API Security Overview
 ## CI/CD Pipeline Overview
