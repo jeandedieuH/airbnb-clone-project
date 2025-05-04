@@ -18,6 +18,22 @@ This project is an application inspired by Airbnb, designed to replicate its cor
 **DevOps engineer**: manages the processes, tools, and infrastructure needed to build, test, deploy, and operate the software efficiently. They automate workflows, set up continuous integration and delivery pipelines, monitor system performance, and handle cloud services or servers.
 
 ## Technology Stack Overview
+-**Django**: A high-level Python web framework used for building the RESTful API.
+
+-**Django REST Framework**: Provides tools for creating and managing RESTful APIs.
+
+-**PostgreSQL**: A powerful relational database used for data storage.
+
+-**GraphQL**: Allows for flexible and efficient querying of data.
+
+-**Celery**: For handling asynchronous tasks such as sending notifications or processing payments.
+
+-**Redis**: Used for caching and session management.
+
+-**Docker**: Containerization tool for consistent development and deployment environments.
+
+-**CI/CD Pipelines**: Automated pipelines for testing and deploying code changes.
+
 ## Database Design Overview
 ## Feature Breakdown
 ## API Security Overview
