@@ -35,6 +35,75 @@ This project is an application inspired by Airbnb, designed to replicate its cor
 - **CI/CD Pipelines**: Automated pipelines for testing and deploying code changes.
 
 ## Database Design Overview
+### 1. User
+**Important Fields:**
+- `id`: Unique identifier
+- `name`
+- `email`
+- `role`: guest, host, or both
+- `profile_image_url`
+
+**Relationships:**
+- A user can list multiple properties (if a host).
+- A user can make multiple bookings (as a guest).
+- A user can write multiple reviews.
+- A user can receive payments (if a host).
+
+### 2. Property
+
+**Important Fields:**
+- `id`: Unique identifier
+- `title`
+- `description`
+- `address`
+- `price_per_night`
+- `host_id`: Reference to User
+
+**Relationships:**
+- A property belongs to one user (the host).
+- A property can have multiple bookings.
+- A property can have multiple reviews.
+
+### 3. Booking
+
+**Important Fields:**
+- `id`: Unique identifier
+- `property_id`: Reference to Property
+- `user_id`: Reference to User (the guest)
+- `start_date`
+- `end_date`
+- `status`: confirmed, pending, cancelled
+
+**Relationships:**
+- A booking is made by one user (the guest).
+- A booking is for one property.
+- A booking may result in one payment.
+- 
+### 4. Review
+
+**Important Fields:**
+- `id`: Unique identifier
+- `property_id`: Reference to Property
+- `user_id`: Reference to User (the reviewer)
+- `rating`: e.g., 1–5 stars
+- `comment`
+
+**Relationships:**
+- A review is written by one user for one property.
+- A property can have many reviews.
+- A user can write many reviews.
+### 5. Payment
+
+**Important Fields:**
+- `id`: Unique identifier
+- `booking_id`: Reference to Booking
+- `amount`
+- `payment_date`
+- `status`: paid, pending, failed
+
+**Relationships:**
+- A payment is linked to one booking.
+- A payment is made by the guest (user) and received by the host (user, through the booking/property relationship).
 ## Feature Breakdown
 ## API Security Overview
 ## CI/CD Pipeline Overview
