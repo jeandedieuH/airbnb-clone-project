@@ -124,4 +124,44 @@ Provides hosts with an interface to manage their properties, view upcoming booki
 Ensures the platform is accessible and user-friendly on desktops, tablets, and mobile devices. Responsive design expands the usability of the application, allowing users to interact with it from any device.
 
 ## API Security Overview
+### 1. Authentication
+**Description:**  
+Secure login and registration processes using password hashing and secure protocols (such as HTTPS), along with optional multi-factor authentication.  
+**Importance:**  
+Prevents unauthorized access, ensuring that only legitimate users can access or manage their accounts and sensitive information.
+### 2. Authorization
+**Description:**  
+Role-based access control to restrict actions based on user roles (guest, host, admin).  
+**Importance:**  
+Ensures users can only perform actions they are permitted to, protecting property data, bookings, and administrative features from misuse.
+### 3. Data Encryption
+**Description:**  
+Encrypt sensitive data in transit (using TLS/SSL) and at rest (using database encryption mechanisms).  
+**Importance:**  
+Protects user data such as personal details and payment information from being intercepted or accessed by unauthorized parties.
+### 4. Rate Limiting
+**Description:**  
+Limit the number of requests a user or IP address can make in a given time period.  
+**Importance:**  
+Prevents brute-force attacks, denial-of-service, and abuse of public endpoints to maintain platform stability and security.
+### 5. Input Validation and Sanitization
+**Description:**  
+Validate and sanitize all user input to prevent SQL injection, cross-site scripting (XSS), and other code injection attacks.  
+**Importance:**  
+Protects the application and database from malicious data that could compromise security or integrity.
+### 6. Secure Payment Processing
+**Description:**  
+Integrate trusted third-party payment gateways (e.g., Stripe, PayPal) that comply with PCI DSS standards.  
+**Importance:**  
+Ensures all financial transactions are handled securely, protecting both users’ payment details and the platform’s reputation.
+###7. Activity Logging and Monitoring
+**Description:**  
+Track key user actions and system events, and set up alerts for suspicious activity.  
+**Importance:**  
+Enables detection of potential breaches or misuse, providing a way to respond quickly to security incidents.
+### 8. Regular Security Updates
+**Description:**  
+Apply software patches and updates to frameworks, libraries, and server environments promptly.  
+**Importance:**  
+Reduces vulnerabilities by ensuring all components are up-to-date with the latest security fixes.
 ## CI/CD Pipeline Overview
